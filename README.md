@@ -36,8 +36,8 @@ Through this project, we have:
 - **Diagramming & Modeling**: While UML diagrams like domain models and class diagrams were created, they can be more detailed and refined. For example, a more in-depth class diagram could better represent relationships and dependencies, while sequence diagrams could be expanded to account for more detailed flows of interactions, particularly in complex use cases.
 
 ## 👨‍💻 Contributors
-- **Paulo Alexandre Rodrigues Ferreira**
 - **Alex Araújo Sá** - [Alex Sá](https://github.com/alexaraujosa)
+- **Paulo Alexandre Rodrigues Ferreira** - [Paulo](https://github.com/pauloarf)
 - **Rafael Santos Fernandes** - [DarkenLM](https://github.com/DarkenLM)
 - **Jorge Pereira** - [Alexandre Dias](https://github.com/KhalexO)
 - **Alex Dias** - [Jorgeap64](https://github.com/Jorgeap64)
