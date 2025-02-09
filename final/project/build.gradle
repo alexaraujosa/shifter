@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.dss56'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+
+    flatDir {
+        dirs("lib")
+    }
+}
+
+dependencies {
+    implementation(":mysql-connector-java-8.0.22")
+}
+
+application {
+    // Aqui podemos dizer qual é a classe que é suposto ser a main, e deste modo corre com `gradlew run`... no nosso caso acho que não temos, de todas as maneiras segue um exemplo
+    // mainClass = 'com.sd56.server.Server'
+}
+
+run() {
+    mainClass.set('com.dss56.Main')
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    args("aluno")
+}
+
+tasks.register('runArgless', JavaExec) {
+    mainClass.set('com.dss56.Main')
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+}
+
+
+test {
+    useJUnitPlatform()
+}
